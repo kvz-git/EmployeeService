@@ -7,6 +7,7 @@ import java.util.List;
 
 public class UserService {
     List<User> joinUsers(){
+
         return new ArrayList<User>();
     }
 }
