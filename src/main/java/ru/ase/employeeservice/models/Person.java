@@ -19,7 +19,8 @@ public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;                // Уникальный идентификатор
-    private long personId;          // Табельный номер
+    @Column(nullable = false, length = 16)
+    private String personId;          // Табельный номер
     private String firstname;       // Имя сотрудника
     private String middlename;      // Отчество сотрудника
     @Column(nullable = false, length = 60)
